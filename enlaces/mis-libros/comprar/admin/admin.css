@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap');
+
+:root {
+    --gradient: linear-gradient(to right, #F8BBD0, #f48fb1, #f06292, #ab47bc, #ba68c8, #ce93d8, #b39ddb, #9575cd, #7e57c2, #9575cd, #f48fb1, #F8BBD0);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(36, 17, 178);
+    list-style: none;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #222;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: fondo-anim 20s infinite alternate;
+    padding-top: 80px;
+}
+
+@keyframes fondo-anim {
+    0% {
+        background-position: left;
+    }
+
+    /*por defecto*/
+    100% {
+        background-position: right;
+    }
+}
+
+h1 {
+    text-align: center;
+    /* margin: 0px 0px; */
+    text-decoration: underline;
+    font-size: 50px;
+    margin: 10px;
+    margin-bottom: 70px;
+}
+
+.prox {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+}
+
+.prox img {
+    width: 800px;
+    height: 583px;
+    box-shadow: 15px 15px 40px rgba(255, 255, 255, 0.838);
+    border-radius: 20px;
+}
+
+img {
+    width: 360px;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 70px;
+    top: 0;
+    /* position: fixed; */
+    width: 100%;
+    margin-top: 20px;
+}
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto 45px auto;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+.contenedor h2{
+    text-decoration: underline;
+}
+
+.contenedor>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(244, 159, 244); 
+    height: 450px;
+    width: 400px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding-top: 35px;
+    gap: 25px;
+    flex: 1 1 300px;
+}
+
+.contenedor>div>form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contenedor>div>form>input,
+select {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: rgb(36, 17, 178);
+    font-size: 18px;
+}
+option{
+    color: rgb(36, 17, 178);
+}
+
+.contenedor .button {
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    color: rgb(36, 17, 178);
+}
+ 
+.contenedorProductos h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+.mostrarProductos { 
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.mostrarProductos>div {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgb(244, 159, 244);
+    border-radius: 20px;
+    
+}
+
+.informacion {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.informacion>p:first-child {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.informacion .precio {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contenedorMensaje {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    height: 70px;
+}
+
+.repetidoError,
+.realizado,
+.llenarCampos,
+.noExsiteError {
+    margin: 15px 0px;
+}
+
+.llenarCampos::after,
+.noExsiteError::after,
+.repetidoError::after,
+.realizado::after {
+    background-color: rgb(253, 251, 251);
+    font-size: 25px;
+    color: rgb(248, 30, 30);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.realizado::after {
+    content: 'Realizado';
+    background-color: rgb(254, 254, 254);
+    font-size: 25px;
+    color: rgb(3, 204, 3);
+}
+
+.repetidoError::after {
+    content: 'Este elemento ya existe';
+}
+
+.llenarCampos::after {
+    content: 'Por favor compruebe que todos los campos estan llenos';
+}
+
+.noExsiteError::after {
+    content: 'Este elemento no existe';
+}
+
+@media(max-width:840px) {
+
+    .mostrarProductos{
+        width: 290px;
+    }
+
+    .mostrarProductos img{
+       width: 290px;
+       height: 430px;
+    }
+
+    .informacion>p:first-child {
+        font-size: 25px;
+    }
+
+}

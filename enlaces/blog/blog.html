@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mari. M. Barceló</title>
+    <link rel="shortcut icon" href="../../../imagenes/pluma.2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./blog.css">
+
+
+</head>
+
+<body>
+    <!--<div id="fb-root"></div>
+     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0"
+        nonce="2SrKfw12">
+        </script> -->
+
+    <header class="header">
+        <div class="menu contenedor">
+            <img id="foto" src="../../../imagenes/foto.4.jpeg" alt="foto-autora">
+            <img src="../../../imagenes/pluma.2.png" alt="pluma">
+            <h1>Mi blog</h1>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="../../../imagenes/menu.png" class="menu-icono" alt="icono_menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="#libros">Sobre mis Libros</a></li>
+                    <li><a href="#cajacoment">Comentarios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="presentacion">
+        <h2>Bienvenidos al fascinante mundo de Mari M. Barceló...</h2>
+        <p>
+            En este blog, nos sumergiremos en el universo cautivador creado por una talentosa autora que ha conquistado
+            corazones con sus emotivas novelas de amor. <br>
+            ¿Te has preguntado alguna vez cómo nacen estas conmovedoras historias de amor? <br>En nuestro blog,
+            desentrañaremos el proceso creativo de <span>Mari M. Barceló.</span> <br> Desde la chispa inicial de
+            inspiración
+            hasta la meticulosa construcción de personajes inolvidables y tramas envolventes, descubrirás los secretos
+            que dan vida a sus novelas. <br>
+            Prepárate para sumergirte en un mar de emociones, intrigas y, sobre todo, amor. <br> Este blog es más que un
+            espacio de noticias; es un portal a mundos donde el corazón late más fuerte y las emociones son la fuerza
+            motriz. <br> ¡¡¡¡Bienvenidos al blog de <span>Mari M. Barceló.</span>, donde cada palabra cuenta una
+            historia de amor!!!!
+        </p>
+    </section>
+
+    <section>
+        <div>
+            <h3 id="libros">Mis Libros</h3>
+        </div>
+        <div class="lista-libros">
+
+            <div class="contenido">
+                <article class="libro">
+                    <div class="libros-header">
+                        <div class="libro-img-1"></div>
+                    </div>
+                    <div class="libros-body">
+                        <span>Septiembre 2022 | Mari M. Barceló</span>
+                        <hr>
+                        <h2>Mi guardaespaldas</h2>
+                        <p>¡Éxito Abrumador para "El Guardaespaldas"
+                            En una extraordinaria hazaña literaria El Guardaespaldas ha conquistado el corazón de los
+                            lectores, fue lanzada el 8 de abril de 2021 y a tan solo tres meses de su publicación, el
+                            libro alcanzó la impresionante cifra de un millón de lecturas, marcando un logro excepcional
+                            en mi carrera. <br>
+                            Prepárate para sumergirte en un mar de emociones, intrigas y amor.
+
+                        </p>
+                        <a href="../noticias/noticias.html" class="libros-link">Leer más...</a>
+                    </div>
+                </article>
+                <article class="libro">
+                    <div class="libros-header">
+                        <div class="libro-img-2"></div>
+                    </div>
+                    <div class="libros-body">
+                        <span>Abril 2023 | Mari M. Barceló</span>
+                        <hr>
+                        <h2>Un juego perdido</h2>
+                        <p>¡Mari M. Barceló Lanza su Emocionante Segundo Libro: "Un Juego Perdido"!
+                            La talentosa autora Mari M. Barceló nos sorprende una vez más con el lanzamiento de su
+                            segundo libro, titulado "Un Juego Perdido". Después del éxito arrollador de "El
+                            Guardaespaldas", Mari regresa con otra obra maestra que promete cautivar a sus seguidores y
+                            conquistar nuevos corazones literarios.
+                        </p>
+                        <a href="../noticias/noticias.html#l-2" class="libros-link">Leer más...</a>
+                    </div>
+                </article>
+                <article class="libro">
+                    <div class="libros-header">
+                        <div class="libro-img-3"></div>
+                    </div>
+                    <div class="libros-body">
+                        <span>Agosto 2023 | Mari M. Barceló</span>
+                        <hr>
+                        <h2>El diario de Nicolay</h2>
+                        <p>Mari M. Barceló Deslumbra con "El Diario de Nikholay"
+                            La sorprendente autora Mari M. Barceló lanza su último thriller, "El Diario de Nikholay",
+                            llevando a los lectores a un frenético viaje de misterio y romance. Una novela, repleta de
+                            acción y giros inesperados, promete cautivar a los lectores.
+                            ¡Disponible ahora para aquellos que buscan emociones fuertes!
+
+                        </p>
+                        <a href="../noticias/noticias.html#l-3" class="libros-link">Leer más...</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <div class="cajacoment" id="cajacoment">
+        <h3>Déjame tu comentario</h3>
+
+        <div class="comment-box">
+
+            <form id="commentForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                <button type="button" onclick="addComment()">Agregar Comentario</button>
+            </form>
+
+            <div id="commentsContainer">
+                <!-- Los comentarios se mostrarán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="fb-comments" data-href="http://127.0.0.1:5500/enlaces/blog/blog.html" data-width="" data-numposts="5">
+    </div> -->
+
+    <section class="contacto">
+        <h3 id="contact">Contáctame</h3>
+        <div class="form-contac">
+            <div class="c-form">
+                <h3>Escríbeme y pronto te respondo...</h3>
+                <form action="https://formsubmit.co/adriasuarez79@gmail.com" method="POST">
+                    <p>
+                        <label>Tu Nombre</label>
+                        <input type="text" name="nombre">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p class="mens">
+                        <label>Mensaje</label>
+                        <textarea name="mensaje" rows="2"></textarea>
+                    </p>
+                    <p class="btn-mens">
+                        <button id="btn-2" type="submit">Enviar</button>
+                    </p>
+                </form> 
+            </div>
+            <div class="foto-contac">
+                <div class="c-foto">
+                    <img src="/imagenes/foto.3.jpg" alt="foto-autora" class="c-imagen">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <ul id="redes" class="redes">
+            <li> <a href="https://es-la.facebook.com/" target="_blank"><ion-icon id="red"
+                        name="logo-facebook"></ion-icon></a></li>
+            <li> <a href="https://www.instagram.com/" target="_blank"><ion-icon id="red"
+                        name="logo-instagram"></ion-icon></a></li>
+        </ul>
+
+        <p class="copy"> ©2024. Todos los derechos reservados.
+
+            Diseñado por <a id="adria" href="https://www.linkedin.com/in/adria-suarez/" target="_blank">AdriA
+                Suárez</a>
+        </p>
+
+    </footer>
+
+
+    <script type="text/javascript" src="./nav.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

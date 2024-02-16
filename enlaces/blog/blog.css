@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap');
+
+:root {
+    --gradient: linear-gradient(to right, #F8BBD0, #f48fb1, #f06292, #ab47bc, #ba68c8, #ce93d8, #b39ddb, #9575cd, #7e57c2, #9575cd, #f48fb1, #F8BBD0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: fondo-anim 20s infinite alternate;
+
+}
+
+@keyframes fondo-anim {
+    0% {
+        background-position: left;
+    }
+
+
+    100% {
+        background-position: right;
+    }
+}
+
+/*header*/
+
+.contenedor {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.header {
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-color: #cf79d8;
+    height: 85px;
+    box-shadow: 15px 15px 40px rgba(255, 255, 255, 0.798);
+
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+#foto {
+    border-radius: 15px;
+}
+
+.header .menu img {
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.menu h1 {
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    text-decoration: underline 2px;
+    margin-left: 25px;
+    color: rgb(75, 9, 90);
+
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 25px;
+    padding: 20px;
+    color: rgb(234, 218, 250);
+    display: block;
+    font-weight: 400;
+}
+
+.menu .navbar {
+    margin-left: auto;
+}
+
+.menu .navbar ul li a:hover {
+    color: blueviolet;
+
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+/*presentacion*/
+
+.presentacion {
+    text-align: center;
+    margin: 50px;
+    background: #4202f133;
+    box-shadow: 10px 10px 30px rgba(230, 215, 245, 0.921);
+    border-radius: 15px;
+}
+
+.presentacion h2 {
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    padding-top: 40px;
+    color: rgb(75, 9, 90);
+}
+
+.presentacion p {
+    margin-top: 20px;
+
+    padding: 30px 120px 50px 120px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.presentacion span {
+    font-size: 30px;
+    color: blue;
+    text-decoration: underline;
+}
+
+/*libros*/
+
+.lista-libros {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+}
+
+#libros {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(75, 9, 90);
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
+    max-width: 1000px;
+    margin: 100px;
+}
+
+.libro {
+    width: 310px;
+    height: 975px;
+    box-shadow: 0px 1px 6px 1px rgba(255, 255, 255, 0.838);
+    overflow: hidden;
+    transition: .2s;
+}
+
+.libro:hover {
+    transform: translateY(-7px);
+    box-shadow: 3px 5px 15px 5px rgba(255, 255, 255, 0.838);
+}
+
+
+.libro-img-1 {
+    background: url(/imagenes/libro.1.jpg);
+    width: 310px;
+    height: 470px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.libro-img-2 {
+    background: url(/imagenes/libro.3.jpg);
+    width: 310px;
+    height: 470px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.libro-img-3 {
+    background: url(/imagenes/libro.2.jpg);
+    width: 310px;
+    height: 470px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.libros-body {
+    padding: 15px;
+    text-align: justify;
+}
+
+.libros-body span {
+    display: inline-block;
+    color: #eceff1;
+    margin-bottom: 10px;
+}
+
+.libros-body h2 {
+    margin: 10px;
+    text-decoration: underline;
+    color: blue;
+}
+
+.libros-body p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.libros-body .libros-link {
+    display: block;
+    padding: 5px 18px;
+    background: #efc9f6ef;
+    width: 120px;
+    margin: auto;
+    border-radius: 10px;
+    color: rgb(56, 10, 66);
+
+}
+
+.libros-body .libros-link:hover {
+    color: rgb(244, 14, 160);
+}
+
+/*caja comentarios facebook*/
+
+/* .fb-comments {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 0 500px 80px 500px;
+    background-color: #cbb0f8cf;
+    border-radius: 15px;
+} */
+
+/*caja comentarios*/
+.cajacoment h3 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(75, 9, 90);
+    margin-bottom: 50px;
+}
+
+.comment-box {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 70px;
+    box-shadow: 10px 10px 30px rgba(230, 215, 245, 0.921);
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #c932ce;
+    font-size: 18px;
+    outline: 0;
+}
+
+#name,
+#comment {
+    color: #fff;
+}
+
+button {
+    background-color: #efc9f6;
+    color: rgb(56, 10, 66);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e875f4;
+}
+
+.comment {
+    background-color: #f0d9f4;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #c932ce;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+.comment {
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+/* strong{
+    width: 200px;
+} */
+
+
+/*formulario contacto*/
+
+.contacto {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px 70px 30px;
+
+}
+
+#contact {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(75, 9, 90);
+    margin-bottom: 50px;
+}
+
+.form-contac {
+    margin: 70px;
+    box-shadow: 10px 10px 30px rgba(230, 215, 245, 0.921);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(230, 174, 248, 0.496);
+    border-radius: 15px;
+}
+
+.c-form {
+    width: 50%;
+    margin: 50px;
+    padding: 20px;
+}
+
+.c-form h3 {
+    text-align: center;
+    padding-bottom: 55px;
+    font-size: 30px;
+    color: rgb(56, 10, 66);
+}
+
+.c-form form p {
+    margin: 0;
+    padding: 16px;
+}
+
+.c-form form button,
+.c-form form input,
+.c-form form textarea {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 2px solid #c932ce;
+    font-size: 18px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: #fff;
+    font-size: 18px;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.c-form form button {
+    background: #efc9f6;
+    border: 0;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    justify-content: center;
+    border-radius: 10px;
+    width: 120px;
+    color: rgb(56, 10, 66);
+}
+
+.btn-mens {
+    text-align: center;
+}
+
+#btn-2:hover {
+    color: rgb(244, 14, 160);
+}
+
+.foto-contac {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-foto {
+    width: 100%;
+}
+
+.c-imagen {
+    width: 75%;
+    height: 75%;
+    margin-left: 40px;
+    border-radius: 15px;
+}
+
+/*footer*/
+.footer {
+    padding: 50px !important;
+    background-color: #cf79d8;
+    width: 100%;
+    position: relative;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px -10px 20px rgba(255, 255, 255, 0.798);
+}
+
+.redes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+#red {
+    width: 35px;
+    height: 35px;
+}
+
+#red:hover {
+    color: #3c03e8;
+}
+
+#adria {
+    color: rgb(229, 214, 244);
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#adria:hover {
+    color: rgb(36, 17, 178);
+}
+
+/*adaptacion responsive*/
+
+@media screen and (max-width: 840px) {
+
+    .menu {
+        padding: 15px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .header .menu label img {
+        width: 25px;
+        height: 25px;
+        margin-left: 400px;
+
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(226, 174, 233, 0.881);
+        display: none;
+    }
+
+    .menu .navbar a {
+        color: #000 !important;
+        font-weight: 500 !important;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        min-width: 45vh;
+    }
+
+    .contenido {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .presentacion h2 {
+        padding: 40px 40px 0px 40px;
+    }
+
+    .presentacion p {
+        padding: 30px 80px;
+    }
+
+    .form-contac {
+        flex-wrap: wrap;
+        margin: 20px;
+        margin-bottom: 50px;
+    }
+
+    .c-form {
+        margin: 10px;
+        width: 100%;
+    }
+
+    .c-imagen {
+        width: 75%;
+        height: 75%;
+        margin-bottom: 30px;
+        margin: 0 0 30px 20px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .header .contenedor a {
+        font-size: 20px;
+    }
+
+    .header .contenedor .close {
+        font-size: 40px;
+        top: 15px;
+        right: 30px;
+    }
+
+    .header .menu label img {
+        margin-left: 50px;
+    }
+
+    .contenido {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .presentacion {
+        margin: 25px;
+        text-align: justify;
+    }
+
+    .presentacion h2 {
+        font-size: 30px;
+        padding: 40px 40px 0px 40px;
+    }
+
+    .presentacion p {
+        padding: 30px 30px;
+        font-size: 25px;
+    }
+
+    .presentacion span {
+        font-size: 27px;
+    }
+
+    .cajacoment h3 {
+        font-size: 30px;
+    }
+
+    #contact {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .header .menu label img {
+        margin-left: 50px;
+    }
+
+    .menu h1 {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .cajacoment h3 {
+        font-size: 30px;
+    }
+
+    #contact {
+        font-size: 30px;
+    }
+
+}

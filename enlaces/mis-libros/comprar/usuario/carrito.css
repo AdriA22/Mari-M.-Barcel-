@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap');
+
+:root {
+    --gradient: linear-gradient(to right, #F8BBD0, #f48fb1, #f06292, #ab47bc, #ba68c8, #ce93d8, #b39ddb, #9575cd, #7e57c2, #9575cd, #f48fb1, #F8BBD0);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(36, 17, 178);
+    list-style: none;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #222;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: fondo-anim 20s infinite alternate;
+    padding-top: 80px;
+}
+
+@keyframes fondo-anim {
+    0% {
+        background-position: left;
+    }
+
+    /*por defecto*/
+    100% {
+        background-position: right;
+    }
+}
+
+h1 {
+    text-align: center;
+    /* margin: 0px 0px; */
+    text-decoration: underline;
+    font-size: 50px;
+    margin: 30px;
+    margin-bottom: 40px;
+}
+
+.prox {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+
+}
+
+.prox img {
+    width: 60%;
+    height: 100%;
+    box-shadow: 15px 15px 40px rgba(255, 255, 255, 0.838);
+    border-radius: 20px;
+}
+
+img {
+    width: 320px;
+    height: 500px;
+    /* object-fit: cover; */
+    border-radius: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+
+}
+
+.scroll {
+    background-color: rgba(226, 131, 254, 0.897);
+    box-shadow: .1rem .2rem .3rem rebeccapurple;
+}
+
+
+.scroll h1 {
+    color: white;
+}
+
+.carrito {
+    filter: invert(100%);
+    width: 50px;
+    height: auto;
+    box-shadow: none;
+    position: absolute;
+    top: 14px;
+    cursor: pointer;
+
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.contenedor>div {
+    box-shadow: 15px 15px 40px rgba(255, 255, 255, 0.838);
+    border-radius: 20px;
+
+}
+
+
+.contenedor>div:hover {
+    background-color: rgba(255, 255, 255, 0.275);
+}
+
+.informacion {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.informacion>p:first-child {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.informacion .precio {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.informacion .precio span {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.informacion button {
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(255, 255, 255, 0.518);
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+
+.informacion button:hover {
+    background-color: rgb(175, 173, 190);
+}
+
+.informacion button:active {
+    background-color: white;
+    color: black;
+}
+
+.diseñoNumero {
+    padding: 10px;
+    background-color: rgb(253, 194, 194);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    position: relative;
+    top: -12px;
+    left: 30px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorCompra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(51, 51, 51, 0.6);
+    flex-direction: column;
+    gap: 35px;
+}
+
+.informacionCompra {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(249, 133, 249);
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+}
+
+.informacionCompra h2 {
+    font-weight: 300;
+    margin: 50px 0px 0px 50px;
+    font-size: 35px;
+    width: 100%;
+    color: white;
+}
+
+.x {
+    padding-top: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+
+.productosCompra {
+    font-size: 23px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 450px;
+    height: 25%;
+    overflow-y: auto;
+    margin-top: 50px;
+}
+
+.productosCompra p {
+    color: white;
+}
+
+.productosCompra>div {
+    margin: 0px 45px;
+    padding: 20px 0px;
+    width: auto;
+    border-bottom: 1px dotted rgb(107, 5, 5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.productosCompra::-webkit-scrollbar {
+    width: 7px;
+    background-color: #ba46ec;
+    border-radius: 5px;
+}
+
+.productosCompra::-webkit-scrollbar-thumb {
+    background: rgb(253, 246, 246);
+    border-radius: 3px;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.productosCompra img {
+    width: 28px;
+    height: auto;
+    margin-right: 10px;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.total {
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 150px;
+    font-size: 27px;
+    font-weight: 700;
+
+}
+
+.total p {
+    color: white
+}
+
+.total #suma {
+    color: white;
+}
+
+.total span {
+    font-weight: 300;
+}
+
+.contenedorCompra>button {
+    z-index: 1;
+    background-color: rgb(252, 172, 199);
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contenedorCompra>button {
+    color: purple;
+}
+
+.contenedorCompra>button:hover {
+    background-color: white;
+    color: black;
+}
+
+.none>div,
+.none button,
+.none p {
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    border: 0px;
+}
+
+.soldOut {
+    background-color: white;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+
+.botonTrash {
+    background-color: rgba(226, 20, 20, 0);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    padding: 50px !important;
+    background-color: rgba(255, 255, 255, 0.072);
+    width: 100%;
+    position: relative;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.redes li a {
+    font-size: 32px;
+    color: rgb(229, 214, 244);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.redes li a:hover {
+    transform: translateY(-10px);
+
+}
+
+
+#adria {
+    color: rgb(229, 214, 244);
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#adria:hover {
+    color: rgb(36, 17, 178);
+}
+
+@media(max-width:840px) {
+
+    .diseñoNumero {
+        width: 23px;
+        height: 23px;
+        font-size: 15px;
+        left: 20px;
+        top: -18px;
+    }
+
+    .prox img {
+        width: 95%;
+        height: 100%;
+    }
+
+    .informacionCompra {
+        width: 300px;
+        height: 400px;
+    }
+
+    .informacionCompra h2 {
+        margin: 15px 0 0 15px;
+        font-size: 25px;
+    }
+
+    .x {
+        padding-top: 10px;
+        font-size: 23px;
+        padding-right: 20px;
+    }
+
+    .productosCompra {
+        width: 370px;
+        height: 200px;
+        font-size: 18px;
+        margin: 50px 25px 0 25px;
+    }
+
+    .productosCompra img {
+        width: 19px;
+
+    }
+
+    .total {
+        font-size: 20px;
+        gap: 100px;
+    }
+
+    .contenedorCompra>button {
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+}

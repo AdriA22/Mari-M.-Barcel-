@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+
+}
+
+/*header*/
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    width: auto;
+    height: 750px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/imagenes/foto.2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 70vh;
+    display: flex;
+    align-items: center;
+
+}
+
+/*navbar*/
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home {
+    color: rgb(234, 218, 250);
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.home:hover {
+    color: blueviolet;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 25px;
+    padding: 20px;
+    color: rgb(234, 218, 250);
+    display: block;
+    font-weight: 400;
+}
+
+.menu .navbar ul li a:hover {
+    color: blueviolet;
+
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+
+}
+
+.header-content h1 {
+    font-size: 100px;
+    line-height: 80px;
+    color: rgb(215, 112, 233);
+    font-family: 'MonteCarlo', cursive;
+    font-weight: 400;
+    text-decoration: underline 2px;
+    margin-bottom: 35px;
+    margin-top: 330px;
+}
+
+.header-content p {
+    font-size: 25px;
+    color: rgb(234, 218, 250) !important;
+    padding: 0 200px;
+    margin-bottom: 25px;
+}
+
+
+.sobreMi {
+    display: block;
+
+}
+
+#SobreMi {
+    display: none;
+    position: relative;
+    max-width: 1000px;
+    margin-left: 70px;
+
+}
+
+#mostrarSobreMi {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: rgb(213, 176, 250);
+    background: #ea77ee00;
+    border: none;
+    padding: 28px;
+
+}
+
+#SobreMi p {
+    font-size: 18px;
+    background-color: #2e0730;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px rgba(247, 246, 248, 0.921);
+    text-align: center;
+    line-height: 38px;
+}
+
+
+/*mis libros*/
+
+.libros {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/imagenes/flores.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px 0;
+
+
+}
+
+.libros-content {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+
+}
+
+.libros-content h2 {
+    font-family: 'MonteCarlo', cursive;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 70px;
+    color: rgb(254, 165, 247);
+    padding: 0 150px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.libros-content .p-1 {
+    font-size: 25px;
+    color: rgb(240, 233, 246) !important;
+    padding: 0 200px;
+    margin: 50px;
+    text-align: center;
+}
+
+.libros-content p {
+    font-size: 20px;
+    color: rgb(255, 255, 255) !important;
+    padding: 0 20px;
+    margin: 35px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+}
+
+.libros-grupo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    /* flex-wrap: wrap; */
+}
+
+.libro1 img {
+    width: 200px;
+    height: 320px;
+    box-shadow: 15px 15px 40px rgba(247, 246, 248, 0.921);
+}
+
+.libro1 h3 {
+    font-family: 'MonteCarlo', cursive;
+    font-weight: 400;
+    margin-top: 20px;
+    color: rgb(243, 163, 236);
+    font-size: 50px;
+    text-decoration: underline;
+
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: rgb(212, 129, 251);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: rgb(200, 103, 244);
+}
+
+.info2 {
+    font-size: 25px;
+    padding: 25px;
+    color: rgb(243, 237, 237);
+    font-weight: 400;
+    text-align: end;
+}
+
+.info2:hover {
+    color: rgb(243, 163, 236);
+}
+
+/*blog */
+.blog {
+    background: rgb(229, 203, 253);
+    background-image: url(/imagenes/pluma.4.4.png);
+    background-size: 1000px 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0 50px;
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+
+}
+
+.blog h2 {
+    font-family: 'MonteCarlo', cursive;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(75, 9, 90);
+    font-size: 80px;
+    text-decoration: underline;
+}
+
+.blog .p-2 {
+    font-size: 25px;
+    padding: 0 200px;
+    margin: 50px;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.blog-1 {
+    padding: 15px;
+}
+
+.blog-1 img {
+    width: 200px;
+    height: 320px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 15px 15px 40px rgba(62, 25, 99, 0.921);
+}
+
+.blog-1 h3 {
+    margin-top: 20px;
+    color: rgb(101, 9, 122);
+    text-decoration: underline;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+p {
+    padding: 0 40px 40px 40px;
+    color: rgb(66, 7, 79) !important;
+    font-size: 23px;
+}
+
+.info3 {
+    font-size: 32px;
+    padding: 0 25px 25px 25px;
+    color: rgb(75, 9, 90);
+    display: block;
+    font-weight: 400;
+}
+
+.info3:hover {
+    color: rgb(179, 110, 248);
+}
+
+/*formulario contacto*/
+
+.contacto {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px 70px 30px;
+    background: rgb(192, 139, 241);
+}
+
+#contact {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    font-family: 'MonteCarlo', cursive;
+    font-weight: 400;
+    font-size: 80px;
+    color: rgb(75, 9, 90);
+    margin-bottom: 50px;
+}
+
+.form-contac {
+    margin: 70px;
+    box-shadow: 10px 10px 30px rgba(230, 215, 245, 0.921);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(231, 164, 254);
+    border-radius: 15px;
+}
+
+.c-form {
+    width: 50%;
+    margin: 50px;
+    padding: 20px;
+}
+
+.c-form h3 {
+    text-align: center;
+    padding-bottom: 55px;
+    font-size: 30px;
+    color: rgb(56, 10, 66);
+}
+
+.c-form form p {
+    margin: 0;
+    padding: 16px;
+}
+
+.c-form form button,
+.c-form form input,
+.c-form form textarea {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #ad259f;
+    border-bottom: 2px solid #c932ce;
+    font-size: 18px;
+}
+ 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: #ad259f;
+    font-size: 18px;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.c-form form button {
+    background: #ea77ee;
+    border: 0;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    justify-content: center;
+    border-radius: 10px;
+    width: 120px;
+    color: rgb(56, 10, 66);
+}
+
+.btn-mens {
+    text-align: center;
+}
+
+.foto-contac {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-foto {
+    width: 100%;
+}
+
+.c-imagen {
+    width: 75%;
+    height: 75%;
+    margin-left: 40px;
+    border-radius: 15px;
+}
+
+
+/*footer*/
+
+#icon-red {
+    width: 20px;
+    height: px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-color: rgb(168, 102, 231);
+    width: 100%;
+    position: relative;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes,
+.menu2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.redes li a {
+    font-size: 32px;
+    color: rgb(229, 214, 244);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+#X {
+    margin: 0;
+    width: 50px;
+
+}
+
+.redes li a:hover {
+    transform: translateY(-10px);
+}
+
+.menu2 li a {
+    font-size: 23px;
+    color: rgb(229, 214, 244);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.menu2 li a:hover {
+    color: rgb(59, 18, 97);
+}
+
+#adria {
+    color: rgb(229, 214, 244);
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#adria:hover {
+    color: rgb(59, 18, 97);
+}
+
+.ola {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../imagenes/ola2.png);
+    background-size: 1000px 100px;
+}
+
+.ola#ola1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animacionOla 10s linear infinite;
+}
+
+.ola#ola2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animacionOla_2 7s linear infinite;
+}
+
+.ola#ola3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animacionOla 7s linear infinite;
+}
+
+.ola#ola4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animacionOla_2 10s linear infinite;
+}
+
+@keyframes animacionOla {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animacionOla_2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+
+/*adaptacion responsive*/
+
+@media(max-width:840px) {
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(226, 174, 233, 0.881);
+        display: none;
+    }
+
+    .menu .navbar a {
+        color: #000 !important;
+        font-weight: 500 !important;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header {
+        height: 650px;
+        min-height: 0vh;
+        min-width: 45vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+
+    }
+
+    .header-content h1 {
+        font-size: 70px;
+        margin-top: 220px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    #SobreMi {
+        margin-left: 0px;
+    }
+
+    .libros {
+        padding: 30px;
+    }
+
+    .libros-content {
+        margin-top: 150px;
+    }
+
+
+    .libros-content h2 {
+        padding: 0;
+        color: rgb(227, 185, 240);
+    }
+
+    .libros-content .p-1 {
+        padding: 0 50px;
+    }
+
+    .libros-content p {
+        padding: 0px 15px;
+        margin: 25px 5px 40px 5px;
+    }
+
+    #libros {
+        text-align: center !important;
+    }
+
+    .txt-p {
+        padding: 0;
+    }
+
+    .libros-grupo {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .btn {
+        margin-bottom: 50px;
+    }
+
+    .blog {
+        padding: 30px 30px 80px 30px;
+    }
+
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        padding: 0;
+    }
+
+    .blog .p-2 {
+        padding: 0 50px;
+    }
+
+    .blog-1 p {
+        padding: 0 40px 20px 40px;
+    }
+
+    .info3 {
+        padding: 15px 0 40px 0;
+    }
+
+    .form-contac {
+        flex-wrap: wrap;
+        margin: 20px;
+        margin-bottom: 50px;
+    }
+
+    .c-form {
+        margin: 10px;
+        width: 100%;
+    }
+
+    .c-imagen {
+        width: 75%;
+        height: 75%;
+        margin-bottom: 30px;
+        margin: 0 0 30px 20px;
+    }
+
+    .copy {
+        margin: 10px;
+        padding: 0;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .header {
+        height: 720px;
+    }
+
+    .header-content {
+        padding: 100px 30px 0 30px;
+        height: 720px;
+    }
+
+    .header-content h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+        margin-top: 300px;
+    }
+
+    .header-content p {
+        margin-bottom: 15px;
+    }
+
+    #mostrarSobreMi {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .sobreMi {
+        margin-bottom: 25px;
+    }
+
+    .libros-content .p-1 {
+        padding: 0px;
+        margin: 20px;
+        text-align: justify;
+    }
+
+    .blog .p-2 {
+        padding: 0px;
+        margin: 20px;
+        text-align: justify;
+    }
+
+    .blog-content p {
+        margin: 25px 5px 40px 5px;
+        padding: 0 15px;
+        color: rgb(235, 231, 238);
+    }
+}
