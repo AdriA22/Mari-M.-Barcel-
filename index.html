@@ -179,18 +179,19 @@
         <div class="form-contac">
             <div class="c-form">
                 <h3>Escríbeme y pronto te respondo...</h3>
-                <form action="https://formsubmit.co/adriasuarez79@gmail.com" method="POST">
+                <form action="https://formsubmit.co/adriasuarez79@gmail.com" method="POST"
+                    onsubmit="return validarFormulario()">
                     <p>
-                        <label>Tu Nombre</label>
-                        <input type="text" name="nombre">
+                        <label for="nombre">Tu Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
                     </p>
                     <p>
-                        <label>Email</label>
-                        <input type="email" name="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
                     </p>
                     <p class="mens">
-                        <label>Mensaje</label>
-                        <textarea name="mensaje" rows="2"></textarea>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" rows="2" id="mensaje"></textarea>
                     </p>
                     <p class="btn-mens">
                         <button type="submit">Enviar</button>
@@ -199,6 +200,12 @@
                     <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
+            <div id="myModal">
+                <p id="modalContent"></p>
+                <button onclick="cerrarModal()">Cerrar</button>
+            </div>
+            <div id="modalOverlay"></div>
+            
             <div class="foto-contac">
                 <div class="c-foto">
                     <img src="/imagenes/foto.3.jpg" alt="foto-autora" class="c-imagen">
